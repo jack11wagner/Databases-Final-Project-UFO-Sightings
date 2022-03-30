@@ -1,0 +1,12 @@
+Number of queries from a certain year
+All queries from a certain state
+All reports of ufos with a certain shape
+Query for a certain duration or higher
+All UFO reports posted in a year
+Get the dates of the n earliest UFO reports
+Total number of UFO reports
+All circular UFO reports from Arizona before 2003
+Get summaries for all foreign (not North America) reports
+Get the year with the most UFO reports
+Get the year with the least UFO reports
+Get all unique UFO shapes (count = 1)

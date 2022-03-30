@@ -1,0 +1,12 @@
+select count(*) from Report where year(date) = {};
+select ID, r.City, State, Date, Time, Shape, Summary, Duration, Posted from Report r inner join Location l on r.city = l.city where l.state = "{}";
+select ID, r.City, State, Date, Time, Shape, Summary, Duration, Posted from Report r inner join Location l on r.city = l.city where shape = "{}";
+select ID, r.City, State, Date, Time, Shape, Summary, Duration, Posted from Report r inner join Location l on r.city = l.city where duration >= "{}";
+select ID, r.City, State, Date, Time, Shape, Summary, Duration, Posted from report r inner join location l on r.city = l.city where year(posted) = {};
+select date from report r inner join location l on r.city = l.city where date is not null order by date limit {};
+select count(*) from report;
+select ID, r.City, State, Date, Time, Shape, Summary, Duration, Posted from report r inner join location l on r.city = l.city where shape = "circle" and l.state = "AZ" and year(date) < 2003;
+select summary from report r inner join location l on r.city = l.city where l.state is null;
+select year(date) as year, count(year(date)) as num_reports from report group by year(date) order by num_reports desc limit 1;
+select year(date) as year, count(year(date)) as num_reports from report where year(date) is not null group by year(date) order by num_reports limit 1;
+select shape, count(shape) as shape_count from report where shape is not null group by shape having shape_count = 1;
